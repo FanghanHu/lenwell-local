@@ -1,0 +1,18 @@
+.direction-button {
+    position: relative;
+    padding-left: 2em;
+}
+
+.direction-button img  {
+    height: 2.5em;
+    position: absolute;
+    top: -1.5em;
+    left: -0.3em;
+    transition: all 0.3s ease-out;
+}
+
+.direction-button:hover img  {
+    top: 0;
+    height: 2em;
+    left: -0.05em
+}

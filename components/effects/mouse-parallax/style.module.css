@@ -1,0 +1,8 @@
+.parallax {
+    z-index: -1;
+    position: absolute;
+    object-fit: cover;
+    transition-property: transform,;
+    transition-timing-function: cubic-bezier(0,.33,.07,1.03);
+    transition-duration: 1s;
+}
