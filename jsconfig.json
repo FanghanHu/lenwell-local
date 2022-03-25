@@ -1,13 +1,3 @@
 {
-    "compilerOptions": {
-    },
-    
-    "baseUrl": "./",
-    "include": [
-        "next-env.d.ts",
-        "**/*.ts",
-        "**/*.tsx",
-        "**/*.js",
-        "**/*.jsx"
-      ],
-  }
+    "include": ["node_modules/next/**/*", "components/**/*", "pages/**/*"]
+}
