@@ -32,7 +32,7 @@ export default function MouseParallax({image, imageScale=110, isReverse=false, s
         return () => {
             document.body.removeEventListener("mousemove", handleMouseMove);
         }
-    }, []);
+    }, [imageScale, isReverse]);
 
     return (
         <img src={image} alt="parallax" ref={ref} className={`${customStyle.parallax} ${className}`} style={{
