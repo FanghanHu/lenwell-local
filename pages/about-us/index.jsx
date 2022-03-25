@@ -8,7 +8,7 @@ export default function AboutUs() {
 			<div className="display-6 m-3 border-bottom w-fit-content">About us</div>
 			<div className="h3 text-center mt-5 border-bottom p-1">
 				Lenwell Houston Location
-			</div>sadasd
+			</div>
 			<div className="text-center m-4">
 				<div className="text-muted">5750 Bintliff Dr Ste 210</div>
 				<div className="text-muted">Houston, Texas, 77036</div>
