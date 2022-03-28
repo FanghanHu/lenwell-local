@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
 				/>
 				<meta
 					name="keywords"
-					content="broken glass, broken screens, broken lcd, tablet repair, phone repair, lcd buyback, lcd swap, iwatch repair, apple watch, replacement, replace, mail in repair"
+					content="cellphone, cell phone, phone repair, quick, broken screen, cracked screen, screen replacement, lcd, lcd replacement, lcd repair, tablet repair, cellphone repair, iwatch repair, ipad repair, fix, mobile repair, mail-in repair, mail in repair, same day repair, same-day repair"
 				/>
 				<meta property="og:title" content="Lenwell Digital" />
 				<meta property="og:image" content="/bg-home2.jpg" />
