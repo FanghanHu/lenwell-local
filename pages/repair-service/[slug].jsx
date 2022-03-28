@@ -131,7 +131,7 @@ export default function ModelList() {
 							.map((model, index) => {
 								return (
 									<tr key={`model-` + index}>
-										<td>{model[0]}</td>
+										<td><Link href={`/model-details/${deviceType}/${model[0].toLowerCase().replace(/\s/g, "-")}`}>{model[0]}</Link></td>
 										<td>{model[1]}</td>
 										<td>{model[2] ? "$" + applyDiscount(model[2]) : ""}</td>
 										<td>{model[3] ? "$" + applyDiscount(model[3]) : ""}</td>

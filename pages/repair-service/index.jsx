@@ -6,7 +6,7 @@ const DEVICE_TYPES = [
 	["/sa-iPad.png", "iPad", "ipad"],
 	["/sa-iPhone.png", "iPhone", "iphone"],
 	["/sa-iWatch.png", "Apple Watch", "apple-watch"],
-	["/sa-Samsung-Phone.png", "Samsung Phone", "samsung-phone"],
+	["/sa-Samsung-Phone.png", "Samsung Phone", "samsung-galaxy"],
 	["/sa-Samsung-Tablet.png", "Samsung Tablet", "samsung-tablet"],
 ];
 

@@ -63,7 +63,7 @@ const DEVICE_MODELS_WHOLESALE = {
 		["Series 5",		,									75,					95],
 		["Series 6",		,									80,					100],
 	],
-	"samsung-phone" : [
+	"samsung-galaxy" : [
 		["Note 20 Ultra",	"N985, N986",						160],
 		["Note 20",			"N980, N981",						110],
 		["Note 10 Plus",	"N975, N976",						110],
@@ -169,7 +169,7 @@ const DEVICE_MODELS_RETAIL = {
 		["Series 5",		,									100,				120],
 		["Series 6",		,									100,				120],
 	],
-	"samsung-phone" : [
+	"samsung-galaxy" : [
 		["Note 20 Ultra",	"N985, N986",						180],
 		["Note 20",			"N980, N981",						130],
 		["Note 10 Plus",	"N975, N976",						130],
