@@ -47,7 +47,7 @@ export default function Page2() {
 						<div>We use genuine LCD only</div>
 						<div>Fix broken screen, touch issue</div>
 						<Link href="/lcd-swap">
-							<a className="link mt-5">Learn more</a>
+							<a className="link mt-5">What is LCD Swap?</a>
 						</Link>
 					</div>
 				</div>

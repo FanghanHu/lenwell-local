@@ -13,7 +13,7 @@ export default function Page4() {
 					Sell your broken screen to us
 				</div>
 				<Link href="/lcd-buyback">
-                    <a className="h6 text-white fw-light text-decoration-underline mb-5">learn more</a>
+                    <a className="h6 text-white fw-light text-decoration-underline mb-5">How to sell your broken screen?</a>
 				</Link>
 			</div>
 			<div className="d-flex flex-column flex-md-row justify-content-center align-items-center p-5 text-center">

@@ -12,7 +12,6 @@ function MyApp({ Component, pageProps }) {
 		>
 			<Head>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<meta name="theme-color" content="#000000" />
 				<link rel="icon" href="/favicon.ico" />
 				<title>Lenwell</title>
 				<meta
@@ -23,10 +22,10 @@ function MyApp({ Component, pageProps }) {
 					name="keywords"
 					content="broken glass, broken screens, broken lcd, tablet repair, phone repair, lcd buyback, lcd swap, iwatch repair, apple watch, replacement, replace, mail in repair"
 				/>
-				<meta property="og:title" content="Lenwell" />
+				<meta property="og:title" content="Lenwell Digital" />
 				<meta property="og:image" content="/bg-home2.jpg" />
 				<meta
-					property="og:description "
+					property="og:description"
 					content="Lenwell Digital is a Samsung and Apple mobile device repair shop specializing in the repair of screen glass panel, touchpad, LCD. Expert technicians will fix your cracked/broken iPhone, iPad, iWatch, or Samsung phone and tablet with the best genuine parts. Lenwell Digital is the place to go for your mobile device repair needs."
 				/>
 			</Head>
