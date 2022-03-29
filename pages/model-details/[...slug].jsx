@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 import { useRouter } from "next/router";
 import DirectionButton from "../../components/direction-button";
@@ -101,7 +100,7 @@ export default function ModelDetail() {
 							<meta itemProp="ratingValue" content="5" />
 							<meta itemProp="bestRating" content="5" />
 						</div>
-						<span itemProp="reviewBody"> Great place! Staff is friendly and always there to help. Super fast turn around. Personally never had any service issues with them that's why I continue to come to them. Give them a try you won't regret it!! </span>
+						<meta itemProp="reviewBody" content="Great place! Staff is friendly and always there to help. Super fast turn around. Personally never had any service issues with them that's why I continue to come to them. Give them a try you won't regret it!!" />
 					</div>
 					<div itemProp="brand" itemType="https://schema.org/Brand" itemScope>
 						<meta itemProp="name" content="Lenwell" />
