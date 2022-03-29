@@ -2,37 +2,9 @@ import { useState } from "react";
 import axios from "axios";
 import GlassPanel from "../components/glass-panel";
 import DirectionButton from "../components/direction-button";
-
-const axiosIns = axios.create({
-	transformRequest: (data, headers) => {
-		return JSON.stringify(data);
-	},
-});
+import ContactForm from "../components/contact-form";
 
 export default function ContactUs() {
-	//send the contact us form
-	const [email, setEmail] = useState("");
-	const [message, setMessage] = useState("");
-	const [isSending, setIsSending] = useState(false);
-
-	const sendMessage = () => {
-		if (message.trim().length > 0 && email.trim().length > 0) {
-			setIsSending(true);
-			axiosIns
-				.post("https://hooks.zapier.com/hooks/catch/9413593/bmgsqx8/", {
-					email: email,
-					message: message,
-				})
-				.then((res) => {
-					setMessage("");
-					setIsSending(false);
-					alert("Message received, thank you!");
-				});
-		} else {
-			alert("Please enter a valid message and email.");
-		}
-	};
-
 	return (
 		<div>
 			<div className="display-6 m-3 border-bottom w-fit-content">
@@ -69,44 +41,7 @@ export default function ContactUs() {
 				</div>
 			</div>
 			<div className="text-center h5 pt-5">Leave a message:</div>
-			<div
-				className="mx-auto mb-4"
-				style={{ width: "max(350px, min(60%, 700px))" }}
-			>
-				<div className="mb-3">
-					<label className="form-label fw-light">Email:</label>
-					<input
-						type="email"
-						className="form-control"
-						placeholder="John@example.com"
-						value={email}
-						onChange={(e) => {
-							setEmail(e.target.value);
-						}}
-					/>
-				</div>
-				<div className="mb-3">
-					<label className="form-label fw-light">Message: </label>
-					<textarea
-						className="form-control"
-						rows="5"
-						placeholder="Hey, My name is John, and I have a question, please give me a call at (123) 456-7890."
-						value={message}
-						onChange={(e) => {
-							setMessage(e.target.value);
-						}}
-					></textarea>
-				</div>
-				<div className="d-flex justify-content-end">
-					<button
-						className="button button-primary"
-						onClick={sendMessage}
-						disabled={isSending}
-					>
-						Send
-					</button>
-				</div>
-			</div>
+			<ContactForm/>
 		</div>
 	);
 }

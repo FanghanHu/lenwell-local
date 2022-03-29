@@ -8,7 +8,7 @@ export default function Footer() {
 			<div className="container">
 				<div className="row">
 					<div
-						className="col-6 text-center d-flex flex-column justify-content-center"
+						className="col-4 text-center d-flex flex-column justify-content-center"
 						style={{ borderRight: "1px solid gray" }}
 					>
 						<Link href="/">
@@ -24,13 +24,8 @@ export default function Footer() {
 							© All rights reserved
 						</div>
 					</div>
-					<div className="col-6 py-4 px-3 px-md-5">
-						<ul className="list-unstyled">
-							<li>
-								<Link href="/referrer">
-									<a className={style["footer-link"]}>Become a referrer</a>
-								</Link>
-							</li>
+					<div className="col-8 py-4 d-flex flex-wrap">
+						<ul className="list-unstyled px-3 px-md-5">
 							<li>
 								<Link href="/contact-us">
 									<a className={style["footer-link"]}>Contact us</a>
@@ -54,6 +49,18 @@ export default function Footer() {
 							<li>
 								<Link href="/return-policy">
 									<a className={style["footer-link"]}>Return Policy</a>
+								</Link>
+							</li>
+						</ul>
+						<ul className="list-unstyled px-3 px-md-5">
+							<li>
+								<Link href="/referrer">
+									<a className={style["footer-link"]}>Become a referrer</a>
+								</Link>
+							</li>
+							<li>
+								<Link href="/b2b">
+									<a className={style["footer-link"]}>Business-to-Business</a>
 								</Link>
 							</li>
 						</ul>
