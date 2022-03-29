@@ -54,6 +54,11 @@ export default function Footer() {
 						</ul>
 						<ul className="list-unstyled px-3 px-md-5">
 							<li>
+								<Link href="/order-online">
+									<a className={style["footer-link"]}>Order online</a>
+								</Link>
+							</li>
+							<li>
 								<Link href="/referrer">
 									<a className={style["footer-link"]}>Become a referrer</a>
 								</Link>
