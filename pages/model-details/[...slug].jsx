@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 import { useRouter } from "next/router";
 import DirectionButton from "../../components/direction-button";
@@ -48,6 +49,65 @@ export default function ModelDetail() {
 				fixed even if your warranty has already expired, you are welcome to walk
 				in with your device at any time.
 			</p>
+			<div>
+				<div itemType="https://schema.org/Product" itemScope>
+					<meta itemProp="name" content={`${deviceType} ${deviceModel} Screen Repair Service`} />
+					<link
+						itemProp="image"
+						href="/bg-home1.jpg"
+					/>
+					<link
+						itemProp="image"
+						href="/bg-home2.jpg"
+					/>
+					<link
+						itemProp="image"
+						href="/bg-home3.jpg"
+					/>
+					<meta
+						itemProp="description"
+						content={`Same-day mail-in or walk-in repair service for ${deviceType} ${deviceModel}.`}
+					/>
+					<div itemProp="offers" itemType="https://schema.org/Offer" itemScope>
+						<link itemProp="url" href="#" />
+						<meta
+							itemProp="availability"
+							content="https://schema.org/InStock"
+						/>
+						<meta itemProp="priceCurrency" content="USD" />
+						<meta itemProp="price" content={model[1]} />
+					</div>
+					<div
+						itemProp="aggregateRating"
+						itemType="https://schema.org/AggregateRating"
+						itemScope
+					>
+						<meta itemProp="reviewCount" content="39" />
+						<meta itemProp="ratingValue" content="4.9" />
+					</div>
+					<div itemProp="review" itemType="https://schema.org/Review" itemScope>
+						<div
+							itemProp="author"
+							itemType="https://schema.org/Person"
+							itemScope
+						>
+							<meta itemProp="name" content="Dudename charlie" />
+						</div>
+						<div
+							itemProp="reviewRating"
+							itemType="https://schema.org/Rating"
+							itemScope
+						>
+							<meta itemProp="ratingValue" content="5" />
+							<meta itemProp="bestRating" content="5" />
+						</div>
+						<span itemProp="reviewBody"> Great place! Staff is friendly and always there to help. Super fast turn around. Personally never had any service issues with them that's why I continue to come to them. Give them a try you won't regret it!! </span>
+					</div>
+					<div itemProp="brand" itemType="https://schema.org/Brand" itemScope>
+						<meta itemProp="name" content="Lenwell" />
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 }

@@ -131,7 +131,15 @@ export default function ModelList() {
 							.map((model, index) => {
 								return (
 									<tr key={`model-` + index}>
-										<td><Link href={`/model-details/${deviceType}/${model[0].toLowerCase().replace(/\s/g, "-")}`}>{model[0]}</Link></td>
+										<td>
+											<Link
+												href={`/model-details/${deviceType}/${model[0]
+													.toLowerCase()
+													.replace(/\s/g, "-")}`}
+											>
+												{model[0]}
+											</Link>
+										</td>
 										<td>{model[1]}</td>
 										<td>{model[2] ? "$" + applyDiscount(model[2]) : ""}</td>
 										<td>{model[3] ? "$" + applyDiscount(model[3]) : ""}</td>
@@ -145,11 +153,11 @@ export default function ModelList() {
 			</div>
 			<div className="text-muted m-4">
 				<p>
-                    The prices listed here are merely estimates, the actual price may be
-                    different depending on what problem was diagnosed, please always refer
-                    to your invoice for the final price.
-                </p>
-                <h5>Read more about our repair services:</h5>
+					The prices listed here are merely estimates, the actual price may be
+					different depending on what problem was diagnosed, please always refer
+					to your invoice for the final price.
+				</p>
+				<h5>Read more about our repair services:</h5>
 				<Link href="/how-to-figure-out-if-your-lcd-is-broken">
 					How to figure out if your LCD is broken?
 				</Link>
