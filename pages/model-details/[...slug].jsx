@@ -36,8 +36,7 @@ export default function ModelDetail() {
                     {model[5] ? <div className="m-2"><h3>${model[5]}</h3><h4 className="text-muted fw-light">Backdoor Repair</h4></div> : ""}
                 </div>
 				<div className="text-muted text-center">
-					Check the discounted price for B2B service {" "}
-					<Link href="/repair-service">here</Link>.
+					<Link href="/repair-service">Check the discounted price for B2B service</Link>
 				</div>
 			</div>
             <h3 className="text-center mt-5">Fix your {deviceType} {deviceModel} today:</h3>
