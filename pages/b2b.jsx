@@ -31,7 +31,7 @@ export default function B2B() {
 					our methodologies in <b>screen repair</b>. We are able to reduce repair costs
 					by repairing the broken glass instead of replacing the screen,
 					replacing a faulty touch digitizer without replacing the LCD. In most
-					cases, we are able to help our customers save <b>up 70%</b> of the repair
+					cases, we are able to help our customers save <b>up to 70%</b> of the repair
 					cost.
 				</p>
 				<h5 className="text-center">
