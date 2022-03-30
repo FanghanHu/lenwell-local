@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import DirectionButton from "../../components/direction-button";
@@ -14,6 +15,9 @@ export default function ModelDetail() {
 
 	return (
 		<div className="container">
+			<Head>
+				<meta name="keywords" content={`screen repair, glass repair, lcd repair, broken screen, cracked screen, cellphone repair, tablet repair, screen replacement, LCD replacement, glass replacement, ${model[1]}`} />
+			</Head>
 			<h2 className="my-4">
 				Screen repair service for {deviceType} {deviceModel}
 			</h2>
