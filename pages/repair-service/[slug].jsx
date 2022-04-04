@@ -169,3 +169,17 @@ export default function ModelList() {
 		</div>
 	);
 }
+
+
+export async function getStaticPaths() {
+	return {
+		paths: [
+			{params: {slug: "ipad"}},
+			{params: {slug: "iphone"}},
+			{params: {slug: "apple-watch"}},
+			{params: {slug: "samsung-galaxy"}},
+			{params: {slug: "samsung-tablet"}},
+		],
+		fallback: false,
+	}	
+}
