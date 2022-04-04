@@ -24,7 +24,7 @@ export default function MailIn() {
 			<div className="container my-5 fw-light">
 				<p className="lead">
 					We accept mail-in orders, and it is fairly easy and fast to send a
-					phone or tablet in for repair. however, there are a few things you
+					phone or tablet for repair. however, there are a few things you
 					need to take care of in order to avoid damage, confusion, and delays.
 				</p>
 				<h5>Pack your device carefully:</h5>
