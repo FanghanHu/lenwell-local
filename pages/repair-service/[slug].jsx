@@ -161,6 +161,7 @@ export default function ModelList() {
 				<Link href="/how-to-figure-out-if-your-lcd-is-broken">
 					How to figure out if your LCD is broken?
 				</Link>
+				<br/>
 				<Link href="/mail-in">
 					Same-day mail-in order is available
 				</Link>

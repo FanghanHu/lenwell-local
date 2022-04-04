@@ -59,6 +59,11 @@ export default function Footer() {
 								</Link>
 							</li>
 							<li>
+								<Link href="/mail-in">
+									<a className={style["footer-link"]}>Mail-in Order</a>
+								</Link>
+							</li>
+							<li>
 								<Link href="/referrer">
 									<a className={style["footer-link"]}>Become a referrer</a>
 								</Link>
