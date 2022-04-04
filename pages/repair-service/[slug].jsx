@@ -183,3 +183,8 @@ export async function getStaticPaths() {
 		fallback: false,
 	}	
 }
+
+export async function getStaticProps({ params }) {
+	return { props: {} };
+}
+
