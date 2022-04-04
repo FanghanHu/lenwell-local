@@ -45,12 +45,14 @@ export default function ModelList() {
 						setCustomers(res.data.customers);
 					}
 				});
+		} else {
+			setCustomers([]);
 		}
 	}, [query, setCustomers]);
 
 	const customer = customers.length === 1 ? customers[0] : null;
 	const DEVICE_MODELS =
-		customer?.["referred_by"] === "Business with Tax ID"
+		(customer?.["referred_by"] + "").toLowerCase().includes("business")
 			? DEVICE_MODELS_WHOLESALE
 			: DEVICE_MODELS_RETAIL;
 	let discount = 0;
