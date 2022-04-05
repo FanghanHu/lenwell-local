@@ -5,6 +5,7 @@ import { useState, useRef, useEffect } from "react";
 
 export default function NavBar() {
 	const [navHeight, setNavHeight] = useState(0);
+	const [isExpanded, setExpanded] = useState(false);
 	const navRef = useRef();
 
 	useEffect(() => {
@@ -36,21 +37,78 @@ export default function NavBar() {
 
 	useEffect(() => {
 		setNavHeight(navRef.current.clientHeight);
-	}, [])
+	}, []);
 
 	return (
-		<div style={{minHeight: navHeight}}>
+		<div style={{ minHeight: navHeight }}>
 			<div className={style["nav-bar"]} ref={navRef}>
 				<Link href="/">
-					<a><img src="/Lenwell-Digital-Logo-No-BG.png" alt="lenwell" /></a>
+					<a>
+						<img src="/Lenwell-Digital-Logo-No-BG.png" alt="lenwell" />
+					</a>
 				</Link>
-				<div className={style["nav-link-list"]}>
+				<div
+					className={`${style["nav-link-list"]} ${
+						isExpanded ? style.expanded : ""
+					}`}
+				>
 					<Link href="/order-online">Schedule Online</Link>
-					<Link href="/repair-service">Repair Service</Link>
-					<Link href="/lcd-swap">LCD Swap Service</Link>
-					<Link href="/lcd-buyback">LCD Buyback</Link>
-					<Link href="/about-us">About us</Link>
-					<Link href="/contact-us">Contact us</Link>
+					<div className={style.dropdown}>
+						Guides
+						<ul>
+							<li>
+								<Link href="/lcd-swap">Samsung Smartphone Screen Replacement</Link>
+							</li>
+						</ul>
+					</div>
+					<Link href="/repair-service">Repair Price List</Link>
+					<div className={style.dropdown}>
+						Services
+						<ul>
+							<li>
+								<Link href="/lcd-swap">LCD Swap</Link>
+							</li>
+							<li>
+								<Link href="/lcd-buyback">LCD Buyback</Link>
+							</li>
+							<li>
+								<Link href="/mail-in">Mail-In Order</Link>
+							</li>
+						</ul>
+					</div>
+					<div className={style.dropdown}>
+						Info & Support
+						<ul>
+							<li>
+								<Link href="/about-us">About us</Link>
+							</li>
+							<li>
+								<Link href="/contact-us">Contact us</Link>
+							</li>
+						</ul>
+					</div>
+
+					<button
+						className={style.arrow}
+						onClick={() => {
+							setExpanded(!isExpanded);
+						}}
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							className="h-6 w-6"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							strokeWidth={2}
+						>
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								d="M19 9l-7 7-7-7"
+							/>
+						</svg>
+					</button>
 				</div>
 			</div>
 		</div>

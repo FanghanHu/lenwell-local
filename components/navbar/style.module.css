@@ -20,18 +20,107 @@
 
 .nav-link-list {
     display: flex;
+    justify-content: flex-end;
     flex-wrap: wrap;
+    font-weight: 300;
 }
 
-.nav-link-list a{
-    text-decoration: none;
-    color: black;
+.nav-link-list a {
     margin: 5px 0.7em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 300;
     transition: all 0.3 ease-out;
+    text-decoration: none;
+    color: black;
 }
+
+.nav-link-list > *:hover {
+    cursor: pointer;
+}
+
 
 .nav-link-list a:hover {
     color: rgba(0,0,0,0.6);
+}
+
+.dropdown {
+    width: fit-content;
+    white-space: nowrap;
+    padding: 5px 0.7em;
+}
+
+.dropdown > a {
+    margin: 0;
+}
+
+.dropdown ul{
+    margin: 5px 0;
+    padding: 0;
+    background-color: white;
+    border: 1px solid rgb(209, 207, 207);
+    border-radius: 0  0 5px 5px;
+    position: absolute;
+    transform-origin: top;
+    display: none;
+    font-size: 0.9em;
+}
+
+.dropdown:hover ul {
+    display: block;
+}
+
+.dropdown li {
+    list-style-type: none;
+    margin: 3px;
+}
+
+.arrow {
+    margin-left: auto;
+    border: none;
+    background: none;
+    width: 2em;
+    display: none;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+}
+
+@media only screen and (max-width: 480px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+
+    .nav-link-list {
+        width: 100%;
+        flex-grow: 1;
+        align-items: flex-start;
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        flex-wrap: nowrap;
+    }
+
+    .nav-link-list.expanded {
+        max-height: 500px;
+        overflow-y: auto;
+    }
+    
+    .arrow { 
+        display: block;
+    }
+
+    .nav-link-list.expanded .arrow {
+        transform: rotate(180deg);
+    }
+
+    .dropdown ul{ 
+        display: block;
+        position: relative;
+        background: none;
+        border: none;
+        margin: none;
+    }
 }
