@@ -57,10 +57,10 @@ export default function ModelList() {
 			: DEVICE_MODELS_RETAIL;
 	let discount = 0;
 	if (customer) {
-		if (customer["business_and_full_name"].includes("VVIP")) discount = 13;
-		if (customer["business_and_full_name"].includes("VIP1")) discount = 11;
-		if (customer["business_and_full_name"].includes("VIP2")) discount = 8;
-		if (customer["business_and_full_name"].includes("VIP3")) discount = 5;
+		if (customer["business_and_full_name"].toLowerCase().includes("vvip")) discount = 13;
+		if (customer["business_and_full_name"].toLowerCase().includes("vip1")) discount = 11;
+		if (customer["business_and_full_name"].toLowerCase().includes("vip2")) discount = 8;
+		if (customer["business_and_full_name"].toLowerCase().includes("vip3")) discount = 5;
 	}
 
 	const applyDiscount = (price) =>
