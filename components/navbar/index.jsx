@@ -45,6 +45,7 @@ export default function NavBar() {
 					<a><img src="/Lenwell-Digital-Logo-No-BG.png" alt="lenwell" /></a>
 				</Link>
 				<div className={style["nav-link-list"]}>
+					<Link href="/order-online">Schedule Online</Link>
 					<Link href="/repair-service">Repair Service</Link>
 					<Link href="/lcd-swap">LCD Swap Service</Link>
 					<Link href="/lcd-buyback">LCD Buyback</Link>
