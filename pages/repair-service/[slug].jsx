@@ -75,7 +75,7 @@ export default function ModelList() {
 				className="background w-100 px-1 pt-3 pb-4 p-md-5"
 				style={{ backgroundImage: `url(/bg-home3.jpg)`, height: "350px" }}
 			></div>
-			<div className="p-3 py-3">
+			<div className="container p-3 py-3">
 				<a href="#" onClick={() => router.back()}>
 					Back
 				</a>
@@ -153,7 +153,7 @@ export default function ModelList() {
 					</tbody>
 				</table>
 			</div>
-			<div className="text-muted m-4">
+			<div className="container text-muted my-4">
 				<p>
 					The prices listed here are merely estimates, the actual price may be
 					different depending on what problem was diagnosed, please always refer
