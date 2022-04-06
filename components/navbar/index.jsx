@@ -17,7 +17,7 @@ export default function NavBar() {
 			if (scroll > 0) {
 				navRef.current.style.position = "fixed";
 			} else {
-				navRef.current.style.position = "relative";
+				// navRef.current.style.position = "relative";
 			}
 
 			if (lastScroll > scroll || scroll < navRef.current.clientHeight) {
@@ -41,7 +41,13 @@ export default function NavBar() {
 
 	return (
 		<div style={{ minHeight: navHeight }}>
-			<div className={style["nav-bar"]} ref={navRef}>
+			<nav className={style["nav-bar"]} ref={navRef} role="navigation" onClick={(e) => {
+				if(e.target.tagName === "A") {
+					//shink navbar after clicking on a link
+					setExpanded(false);
+					e.target.blur();
+				}
+			}}>
 				<Link href="/">
 					<a>
 						<img src="/Lenwell-Digital-Logo-No-BG.png" alt="lenwell" />
@@ -110,7 +116,7 @@ export default function NavBar() {
 						</svg>
 					</button>
 				</div>
-			</div>
+			</nav>
 		</div>
 	);
 }
