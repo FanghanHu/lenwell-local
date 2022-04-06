@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../styles/globals.css";
 import Head from "next/head";
 import NavBar from "../components/navbar";

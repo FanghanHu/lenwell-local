@@ -57,7 +57,7 @@ export default function NavBar() {
 						Guides
 						<ul>
 							<li>
-								<Link href="/lcd-swap">Samsung Smartphone Screen Replacement</Link>
+								<Link href="/guides/samsung-smartphone-screen-replacement-guide">Samsung Smartphone Screen Replacement</Link>
 							</li>
 						</ul>
 					</div>
