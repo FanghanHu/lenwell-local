@@ -65,6 +65,9 @@ export default function NavBar() {
 							<li>
 								<Link href="/guides/samsung-smartphone-screen-replacement-guide">Samsung Smartphone Screen Replacement</Link>
 							</li>
+							<li>
+								<Link href="/guides/ipad-pro-9.7-screen-replacement-guide">iPad Pro 9.7&ldquo; Screen Replacement</Link>
+							</li>
 						</ul>
 					</div>
 					<Link href="/repair-service">Repair Price List</Link>
