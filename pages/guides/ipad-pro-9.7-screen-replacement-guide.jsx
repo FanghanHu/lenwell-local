@@ -60,7 +60,7 @@ export default function Guide() {
 						<li>Screwdriver</li>
 						<li>A pair of tweezers</li>
 						<li>A Heat Source (Heating Pad or hairdryer)</li>
-						<li>Adhesive (T7000)</li>
+						<li>Adhesive (B7000)</li>
 					</ul>
 				</div>
 			</div>
@@ -176,10 +176,10 @@ export default function Guide() {
 				isopropyl alcohol.
 			</p>
 			<p>
-				13) Use T-7000 glue to secure the home button on the new screen. Make
+				13) Use B-7000 glue to secure the home button on the new screen. Make
 				sure the bracket is aligned correctly before allowing the gel to set.
 				The home button will not “click” when pressed if not installed
-				correctly. Test for “click” sound when done. After that, use the T-7000
+				correctly. Test for “click” sound when done. After that, use the B-7000
 				glue to glue the front camera bracket onto the replacement screen.
 				Finally, let the new screen sit for 3 hours or until the adhesive is
 				dried.
@@ -236,7 +236,7 @@ export default function Guide() {
 			<p>
 				19) Install the screw on the battery connector, and Install the
 				protective cover for the screen flex cable and the cover for the board,
-				Apply T-7000 glue on the edge of the iPad frame where the original
+				Apply B-7000 glue on the edge of the iPad frame where the original
 				adhesive once was.
 			</p>
 			<p>
