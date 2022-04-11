@@ -68,6 +68,9 @@ export default function NavBar() {
 							<li>
 								<Link href="/guides/ipad-pro-9.7-screen-replacement-guide">iPad Pro 9.7&ldquo; Screen Replacement</Link>
 							</li>
+							<li>
+								<Link href="/guides/ipad-flex-positions">iPad Flex Cable Position References</Link>
+							</li>
 						</ul>
 					</div>
 					<Link href="/repair-service">Repair Price List</Link>

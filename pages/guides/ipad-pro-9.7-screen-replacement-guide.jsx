@@ -31,8 +31,11 @@ export default function Guide() {
 				In this guide we will show you how to replace the screen of an iPad Pro
 				9.7, the device&lsquo;s models are A1673, A1674, A1675. repairing other
 				iPad models may have a similar process, but due to different structure,
-				locations of the flex cable may be different, please use caution and do
-				further research if your device is of another model.
+				<Link href="/guides/ipad-flex-positions">
+					locations of the flex cable
+				</Link>{" "}
+				may be different, please use caution and do further research if your
+				device is of another model.
 			</p>
 			<div className="row">
 				<div className="col-12 col-md-6">
