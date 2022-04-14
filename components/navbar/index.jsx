@@ -71,6 +71,9 @@ export default function NavBar() {
 							<li>
 								<Link href="/guides/ipad-flex-positions">iPad Flex Cable Position References</Link>
 							</li>
+							<li>
+								<Link href="/guides/oem-vs-genuine-vs-aftermarket-screens">OEM vs Genuine vs Aftermarket Screens</Link>
+							</li>
 						</ul>
 					</div>
 					<Link href="/repair-service">Repair Price List</Link>
