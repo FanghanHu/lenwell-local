@@ -46,7 +46,7 @@ export default function Referrer() {
 								Getting Started
 							</div>
 							<p>
-								Before you can go out there and strike a deal, you need to register an account with us. With an account, you will have access to our deeply discounted business price list. Either contact in person, call us, or email us to get registered. we will need your business name, contact name, and phone number. You also need to fill out a tax exemption form. which can be downloaded <a href="/tax-exemption.pdf">here</a> .
+								Before you can go out there and strike a deal, you need to register an account with us. With an account, you will have access to our deeply discounted business price list. Either contact us in person, call us, or email us to get registered. we will need your business name, contact name, and phone number. You will also need to fill out a tax exemption form. which can be downloaded <a href="/tax-exemption.pdf">here</a> .
 							</p>
 						</div>
 						<div id="price">
