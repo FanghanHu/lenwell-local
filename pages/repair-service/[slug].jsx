@@ -105,7 +105,7 @@ export default function ModelList() {
 					? "Showing retail price, please enter your account information to find your specific price list"
 					: customers.length > 1
 					? "We Found more than one result, please be more specific, or use your phone number."
-					: `Showing price list for: ${customer["business_and_full_name"]}, You have ${discount}% discount (already calculated).`}
+					: `Showing price list for: ${customer["business_and_full_name"]},${discount? ` You have ${discount}% discount (already calculated).` : ""}`}
 			</div>
 			<div style={{ overflowX: "auto", width: "100vw" }}>
 				<table
