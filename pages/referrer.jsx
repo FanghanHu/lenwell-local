@@ -70,7 +70,7 @@ export default function Referrer() {
 								How to get paid
 							</div>
 							<p>
-								We will charge your customer the full amount you bargained for, and then pay you your earnings. once your send your customer on their way, you can create a money request on Paypal or Cash App to collect your earnings. We will process your request at the end of day, or if the customer doesn't show up in a couple of days, the request will be denied.
+								We will charge your customer the full amount you bargained for, and then pay you your earnings. once your send your customer on their way, you can create a money request on Paypal or Cash App to collect your earnings. We will process your request at the end of day, or if the customer doesn&apos;t show up in a couple of days, the request will be denied.
 							</p>
 						</div>
 					</div>

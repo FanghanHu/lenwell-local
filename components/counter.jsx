@@ -18,7 +18,7 @@ export default function Counter({startNumber, endNumber, duration}) {
         return () => {
             clearTimeout(activeTimeout);
         }
-    }, [display])
+    }, [display, endNumber, step])
 
     return (
         <span>
