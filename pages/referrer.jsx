@@ -13,7 +13,7 @@ export default function Referrer() {
 			></div>
 			<div className="container py-5">
 				<div className="row">
-					<div className="col-3">
+					<div className="col-12 col-md-3">
 						<ol>
 							<li>
 								<a href="#introduction">Introduction</a>
@@ -32,7 +32,7 @@ export default function Referrer() {
 							</li>
 						</ol>
 					</div>
-					<div className="col-9">
+					<div className="col-12 col-md-9">
 						<div id="introduction">
 							<div className="display-6">
 								Introduction
